@@ -1,4 +1,4 @@
-package com.farsheel.statussaver
+package com.app.statussaver
 
 import org.junit.Test
 

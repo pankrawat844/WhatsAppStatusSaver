@@ -1,4 +1,4 @@
-package com.farsheel.statussaver.utils
+package com.app.statussaver.utils
 
 import android.app.Activity
 import android.view.LayoutInflater
@@ -8,7 +8,7 @@ import android.view.ViewGroup
 
 import kotlinx.android.synthetic.main.layout_my_progress.view.*
 import com.bumptech.glide.Glide
-import com.farsheel.statussaver.R
+import com.app.statussaver.R
 
 
 /**

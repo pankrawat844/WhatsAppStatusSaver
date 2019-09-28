@@ -1,4 +1,4 @@
-package com.farsheel.statussaver.utils
+package com.app.statussaver.utils
 
 import android.content.ContentResolver
 import android.content.Context
@@ -18,7 +18,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.RadioButton
 import android.widget.TextView
-import com.farsheel.statussaver.BuildConfig
+import com.app.statussaver.BuildConfig
 import java.io.File
 
 

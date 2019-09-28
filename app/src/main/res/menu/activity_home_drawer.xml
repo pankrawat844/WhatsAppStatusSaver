@@ -4,16 +4,19 @@
     tools:showIn="navigation_view">
 
         <item
-            android:id="@+id/nav_about"
+            android:id="@+id/whatasappstatus"
             android:icon="@drawable/ic_info"
-            android:title="@string/about" />
+            android:title="Whatsapp status" />
 
         <item
-            android:id="@+id/nav_help"
+            android:id="@+id/direct_msg"
             android:icon="@drawable/ic_help"
-            android:title="@string/help" />
+            android:title="Direct message" />
 
-
+    <item
+        android:id="@+id/text_repeater"
+        android:icon="@drawable/ic_help"
+        android:title="Text Repeater" />
 
     
     <item android:title="@string/support">

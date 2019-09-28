@@ -1,4 +1,4 @@
-package com.farsheel.statussaver.home
+package com.app.statussaver.home
 
 import android.Manifest
 import android.annotation.SuppressLint
@@ -20,16 +20,17 @@ import android.support.v4.view.GravityCompat
 import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.GridLayoutManager
-import android.support.v7.widget.LinearLayoutManager
 import android.view.MenuItem
 import android.view.View
-import com.farsheel.statussaver.BuildConfig
-import com.farsheel.statussaver.R
-import com.farsheel.statussaver.utils.MyAlert
-import com.farsheel.statussaver.utils.MyProgress
-import com.farsheel.statussaver.utils.Utils
-import com.farsheel.statussaver.utils.Utils.Companion.WHATSAPP_STATUSES_LOCATION
-import com.farsheel.statussaver.utils.Utils.Companion.WHATSAPP_STATUSES_SAVED_LOCATION
+import com.app.DirectMsgActivity
+import com.app.statussaver.BuildConfig
+import com.app.statussaver.R
+import com.app.statussaver.TextRepeaterActivity
+import com.app.statussaver.utils.MyAlert
+import com.app.statussaver.utils.MyProgress
+import com.app.statussaver.utils.Utils
+import com.app.statussaver.utils.Utils.Companion.WHATSAPP_STATUSES_LOCATION
+import com.app.statussaver.utils.Utils.Companion.WHATSAPP_STATUSES_SAVED_LOCATION
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.InterstitialAd
 import com.google.android.gms.ads.MobileAds
@@ -227,14 +228,18 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             R.id.nav_share -> {
                 shareApp()
             }
-            R.id.nav_about -> {
-                showAbout()
+            R.id.direct_msg -> {
+               startActivity(Intent(this,DirectMsgActivity::class.java))
             }
             R.id.nav_rate -> {
                 rateApp()
             }
-            R.id.nav_help -> {
+            R.id.whatasappstatus -> {
                 showHelp()
+            }
+            R.id.text_repeater -> {
+                 startActivity(Intent(this,TextRepeaterActivity::class.java))
+
             }
         }
 

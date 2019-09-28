@@ -1,11 +1,11 @@
-package com.farsheel.statussaver.image
+package com.app.statussaver.image
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.MotionEvent
 import android.view.ScaleGestureDetector
 import com.bumptech.glide.Glide
-import com.farsheel.statussaver.R
+import com.app.statussaver.R
 import kotlinx.android.synthetic.main.activity_image_view.*
 import kotlinx.android.synthetic.main.content_image_view.*
 import java.io.File

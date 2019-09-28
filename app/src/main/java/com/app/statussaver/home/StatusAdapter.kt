@@ -1,4 +1,4 @@
-package com.farsheel.statussaver.home
+package com.app.statussaver.home
 
 import android.app.Activity
 import android.app.ActivityOptions
@@ -14,11 +14,11 @@ import android.view.ViewGroup
 import android.view.animation.AlphaAnimation
 import android.widget.Toast
 import com.bumptech.glide.Glide
-import com.farsheel.statussaver.MyApplication.Companion.fontRegular
-import com.farsheel.statussaver.R
-import com.farsheel.statussaver.image.ImageViewActivity
-import com.farsheel.statussaver.utils.Utils
-import com.farsheel.statussaver.video.VideoActivity
+import com.app.statussaver.MyApplication.Companion.fontRegular
+import com.app.statussaver.R
+import com.app.statussaver.image.ImageViewActivity
+import com.app.statussaver.utils.Utils
+import com.app.statussaver.video.VideoActivity
 import kotlinx.android.synthetic.main.layout_status_item.view.*
 import org.apache.commons.io.FileUtils
 import java.io.File
