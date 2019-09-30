@@ -17,7 +17,10 @@
         android:id="@+id/text_repeater"
         android:icon="@drawable/ic_help"
         android:title="Text Repeater" />
-
+    <item
+        android:id="@+id/blank_msg"
+        android:icon="@drawable/ic_help"
+        android:title="Blank Message" />
     
     <item android:title="@string/support">
         <menu>

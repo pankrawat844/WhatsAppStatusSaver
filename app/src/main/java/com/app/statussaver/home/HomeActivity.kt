@@ -20,10 +20,12 @@ import android.support.v4.view.GravityCompat
 import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.GridLayoutManager
+import android.util.Log
 import android.view.MenuItem
 import android.view.View
 import com.app.DirectMsgActivity
 import com.app.statussaver.BuildConfig
+import com.app.statussaver.EmptyMsgActivity
 import com.app.statussaver.R
 import com.app.statussaver.TextRepeaterActivity
 import com.app.statussaver.utils.MyAlert
@@ -55,8 +57,10 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     override fun onClickDownload() {
 
-        if (mInterstitialAd.isLoaded) {
-            mInterstitialAd.show()
+        if (mInterstitialAd.isLoaded()) {
+            mInterstitialAd.show();
+        } else {
+            Log.d("TAG", "The interstitial wasn't loaded yet.");
         }
 
     }
@@ -116,7 +120,7 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         //adView.adSize = AdSize.BANNER
         //adView.adUnitId = AD_UNIT_ID
 
-        val adRequest = AdRequest.Builder().build()
+        val adRequest = AdRequest.Builder().addTestDevice("3BE2250B43518CCDA7DE426D04EE231").build()
         adView.loadAd(adRequest)
 
         mInterstitialAd = InterstitialAd(this)
@@ -241,6 +245,11 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                  startActivity(Intent(this,TextRepeaterActivity::class.java))
 
             }
+            R.id.blank_msg -> {
+                startActivity(Intent(this,EmptyMsgActivity::class.java))
+
+            }
+
         }
 
         drawer_layout.closeDrawer(GravityCompat.START)

@@ -1,9 +1,11 @@
 <resources>
-    <string name="app_name">Status Saver</string>
+    <string name="app_name">Whatsapp Tools</string>
 
     <string name="admob_app_id">ca-app-pub-7905372582242201~6016146226</string>
-    <string name="admob_interstitial_id">ca-app-pub-7905372582242201/7684451112</string>
-    <string name="admob_banner_id">ca-app-pub-7905372582242201/8067594492</string>
+<!--    <string name="admob_interstitial_id">ca-app-pub-7905372582242201/7684451112</string>-->
+    <string name="admob_interstitial_id">ca-app-pub-3940256099942544/1033173712</string>
+<!--    <string name="admob_banner_id">ca-app-pub-7905372582242201/8067594492</string>-->
+    <string name="admob_banner_id">ca-app-pub-3940256099942544/6300978111</string>
 
 
     <string name="title_home">Home</string>
@@ -41,6 +43,8 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-
+    <string name="text_for_repeat">Text for Repeat</string>
+    <string name="number_to_repeat_message">Number to Repeat Message</string>
+    <string name="blank" >&#160;</string>
 
 </resources>

@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.app.statussaver.R
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.MobileAds
 import kotlinx.android.synthetic.main.activity_direct_msg.*
 
 class DirectMsgActivity : AppCompatActivity() {
@@ -13,7 +15,13 @@ class DirectMsgActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_direct_msg)
+        MobileAds.initialize(this, getString(R.string.admob_app_id))
 
+        //adView.adSize = AdSize.BANNER
+        //adView.adUnitId = AD_UNIT_ID
+
+        val adRequest = AdRequest.Builder().addTestDevice("3BE2250B43518CCDA7DE426D04EE231").build()
+        adView.loadAd(adRequest)
      send_msg.setOnClickListener {
          if(code.text.toString().isNullOrEmpty())
          {
